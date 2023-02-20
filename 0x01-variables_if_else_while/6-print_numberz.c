@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdio.h>
 /**
  * main - headers goes there
  * discribtion:"prints numbers of base 10 using putchar"
@@ -6,15 +6,14 @@
 */
 int main(void)
 {
-	int s = 97, e = 122;
+	int c;
 
-	while (e >= s)
+	c = 0;
+	while (c < 10)
 	{
-		putchar(e);
-		e--;
+		putchar(c + '0');
+			c++;
 	}
-
 	putchar('\n');
-	
 	return (0);
 }
